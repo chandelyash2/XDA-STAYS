@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Button from '../../reusable/Button';
 const Navbar = () => {
   const [menuActive, setMenuActive] = useState<boolean>(false);
 
@@ -31,9 +32,9 @@ const Navbar = () => {
             <li key={index}>{nav.title}</li>
           ))
         }
-        <div>
-        <button className='bg-[#00caff] px-3'>Log In</button>  
-              <button className='bg-[#00caff] px-3 ml-4'>Sign Up</button>
+        <div className='flex gap-4'>
+          <Button label='Login' />
+          <Button label='Sign Up' />
 
         </div>
 
