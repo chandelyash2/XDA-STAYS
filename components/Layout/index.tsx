@@ -9,10 +9,7 @@ const Layout: React.FC<ILayout> = ({ children }) => {
   return (
     <div className='overflow-auto'>
       <Header />
-      <div className="text-3xl font-bold text-black">
-        {children}
-
-      </div>
+      {children}
       <Footer />
     </div>
   )

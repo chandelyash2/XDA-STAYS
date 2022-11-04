@@ -8,7 +8,7 @@ export default function Home() {
 
     <Layout>
       <div >
-        <Image src={BG} alt='home' className=' bg-no-repeat bg-center lg:w-screen lg:h-screen'/>
+        <Image src={BG} alt='home' className='bg-no-repeat bg-center w-screen'/>
       </div>
 
     </Layout>
