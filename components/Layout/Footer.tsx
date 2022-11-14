@@ -18,7 +18,7 @@ const Footer = () => {
   ]
   const currentYear = new Date().getFullYear().toString();
   return (
-    <div className='w-full bottom:0'>
+    <div className='relative w-full bottom-0'>
       <div className='py-6 bg-[#011c53]  lg:py14'>
         <div className=' xl:container xl:mx-auto '>
           <div className='flex flex-col items-center gap-4'>

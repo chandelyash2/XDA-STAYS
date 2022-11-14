@@ -1,18 +1,22 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Button from '../../reusable/Button';
+import Link from 'next/link';
 const Navbar = () => {
   const [menuActive, setMenuActive] = useState<boolean>(false);
 
   const navMenu = [
     {
-      title: "Home"
+      title: "Home",
+      href: '/'
     },
     {
-      title: "Stays"
+      title: "Stays",
+      href: '/stays'
     },
     {
-      title: "About"
+      title: "About",
+      href: '/about'
     },
 
   ]
@@ -29,14 +33,12 @@ const Navbar = () => {
       <div className=" hidden  lg:block lg: w-2/3 lg:flex lg:flex-row lg:justify-between list-none">
         {
           navMenu.map((nav, index) => (
-            <li key={index}>{nav.title}</li>
+            <Link href={nav.href} key={index}>
+              <li key={index}>{nav.title}</li>
+
+            </Link>
           ))
         }
-        <div className='flex gap-4'>
-          <Button label='Login' />
-          <Button label='Sign Up' />
-
-        </div>
 
       </div>
       {menuActive && (

@@ -4,7 +4,7 @@ interface IContainer {
 }
 const Container: React.FC<IContainer> = ({ children }) => {
   return (
-    <div className="xl:container xl:mx-auto px-4 md:px-5">
+    <div className="xl:container xl:mx-auto px-4 md:px-10">
       {children}
     </div>
   )
