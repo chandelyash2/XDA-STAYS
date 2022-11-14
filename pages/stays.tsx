@@ -38,11 +38,11 @@ const Stays = () => {
           <div className="text-center text-2xl font-bold">
             Explore <span className="text-[#f15824]">Stays</span>
           </div>
-          <div className="flex flex-wrap justify-around gap-4 text-center ">
+          <div className="flex flex-wrap justify-around gap-4 text-center font-bold text-white cursor-pointer ">
             {array.map((d, i) => (
               <div
                 key={i}
-                className="flex font-bold text-white cursor-pointer items-center bg-cover w-36 h-48 border rounded-md my-10 justify-center lg:w-72 "
+                className="flex  items-center bg-cover w-36 h-48 border rounded-md my-10 justify-center lg:w-72 "
                 style={{ backgroundImage: `url(${d.url})` }}
               >
                 <span> {d?.name}</span>{' '}
